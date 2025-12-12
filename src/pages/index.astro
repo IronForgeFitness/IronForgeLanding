@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://f.convertkit.com/ckjs/ck.5.js" async></script>
     <style>
         :root {
             --red: #E63946;
@@ -273,20 +274,25 @@
 
         <!-- Waitlist Form -->
         <form 
-            action="https://app.kit.com/forms/8868189/subscriptions" 
+            action="https://app.kit.com/forms/8868247/subscriptions" 
             method="post" 
-            class="waitlist-form"
-            id="waitlist-form"
-            data-sv-form="8868189"
-            data-uid="80e7d7e9cb"
+            class="seva-form formkit-form waitlist-form"
+            data-sv-form="8868247"
+            data-uid="aef0c0ebb2"
+            data-format="inline"
+            data-version="5"
         >
+            <ul class="formkit-alert formkit-alert-error" data-element="errors" data-group="alert"></ul>
             <input 
                 type="email" 
                 name="email_address" 
                 placeholder="Enter your email"
                 required
+                class="formkit-input"
             >
-            <button type="submit">Join Waitlist</button>
+            <button type="submit" data-element="submit" class="formkit-submit">
+                <span>Join Waitlist</span>
+            </button>
             <p class="form-note">Launching soon on iOS. No spam, just launch updates.</p>
         </form>
 
